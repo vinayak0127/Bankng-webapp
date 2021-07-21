@@ -1,6 +1,6 @@
 import React from "react";
 import "../styles/nav.css";
-import {NavLink } from "react-router-dom";
+import {Link, NavLink } from "react-router-dom";
 
 
 function NavBar() {
@@ -52,6 +52,7 @@ function NavBar() {
                   Contact Us
                 </NavLink>
               </li>
+              <Link className="btn btn-outline-light" to="/users/add">Add User</Link>
             </ul>
             <div className="nav-icon" onClick={handleClick}>
               <i className={click ? "fa fa-times" : "fa fa-bars"}></i>
